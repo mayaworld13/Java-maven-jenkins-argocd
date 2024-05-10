@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: mayaworld13/jenkinsci_argocd:replaceImageTag
+        image: mayaworld13/jenkinsci_argocd:1
         ports:
         - containerPort: 8080
