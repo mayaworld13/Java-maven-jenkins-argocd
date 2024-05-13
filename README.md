@@ -2,6 +2,12 @@
 
 ![Screenshot 2023-03-28 at 9 38 09 PM](https://user-images.githubusercontent.com/43399466/228301952-abc02ca2-9942-4a67-8293-f76647b6f9d8.png)
 
+## Complete CICD using Jenkins and Argocd with SonarQube
+
+
+https://github.com/mayaworld13/Java-maven-jenkins-argocd/assets/127987256/7454afdb-21f0-49a7-ba51-284cd3b746f0
+
+
 
 Here are the step-by-step details to set up an end-to-end Jenkins pipeline for a Java application using SonarQube, Argo CD, Helm, and Kubernetes:
 
