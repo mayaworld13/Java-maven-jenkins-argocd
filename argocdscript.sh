@@ -1,9 +1,4 @@
-#!/usr/bin/bash
-kubectl create namespace argocd
-kubectl apply -n argocd -f https://lnkd.in/d5KRw3t3
-echo "--- inital password for argo cd, user: admin ----"
-kubectl -n argocd get secret/argocd-initial-admin-secret -o json | jq .data.password -r | base64 -d
-echo ""
-echo "ArgoCD server Cluster IP, connect on port 80 or 443"
-kubectl -n argocd get svc/argocd-server -o json | jq .spec.clusterIP -r
-echo "---"
+curl -sL https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.27.0/install.sh | bash -s v0.27.0
+kubectl create -f https://operatorhub.io/install/argocd-operator.yaml
+kubectl get csv -n operators
+kubectl get csv -n argocd
